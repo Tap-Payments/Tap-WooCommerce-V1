@@ -65,12 +65,12 @@
     var logo_src = u.WC_ASSET_URL;
     logo_src = logo_src.replace('woocommerce/assets/', '');
     
-    const l = Object(u.getSetting)("tap_data", {}),
+    const l = Object(u.getSetting)("deema_data", {}),
         p = () => Object(a.decodeEntities)(l.description || ""),
         s = {
-            name: "tap",
+            name: "deema",
             label: Object(r.createElement)("img", {
-                src: logo_src + "/tap-all-in-one/assets/img/logo.png",
+                src: logo_src + "/deema/assets/img/logo.png",
                 alt: Object(a.decodeEntities)(l.title || Object(i.__)("Tap", "woocommerce"))
             }),
             placeOrderButtonLabel: Object(i.__)("Proceed to Tap", "woocommerce"),
